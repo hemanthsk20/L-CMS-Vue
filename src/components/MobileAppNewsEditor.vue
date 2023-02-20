@@ -192,7 +192,7 @@ export default {
                   `https://mobile-app-cms.azure-api.net/private/appNews/`,
                   data,
                   {
-                    headers: { "Ocp-Apim-Subscription-Key": "8ec096a694fa4080ba8df25a2e132205", },
+                    headers: { "Ocp-Apim-Subscription-Key": "", }, //8ec096a694fa4080ba8df25a2e132205
                   }
               )
               .then((response) => {
