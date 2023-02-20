@@ -1,0 +1,125 @@
+@import "variables.scss";
+//---------- styling for ./src/views/Home.vue ----------//
+
+.v-navigation-drawer__content {
+  background-color: $base-background-color;
+  > div,
+  .theme--light.v-list-item:not(.v-list-item--active):not(.v-list-item--disabled),
+  .v-list-item-group .v-list-item--active {
+    color: $base-white !important;
+    &:hover {
+      background-color: $base-hover-menu-color;
+    }
+    i {
+      color: $base-white !important;
+    }
+  }
+  .theme--light.v-input.theme--light.v-input.v-input {
+    color: $base-white !important;
+  }
+  .theme--light.v-icon {
+    color: $base-white !important;
+  }
+  .theme--light.v-select .v-select__selection--comma {
+    color: $base-white !important;
+  }
+  .v-select__slot .theme--light.v-label {
+    color: $base-white !important;
+  }
+  .theme--light.v-select .v-select__selection--comma {
+    color: $base-white !important;
+  }
+  .theme--light.v-text-field > .v-input__control > .v-input__slot:before {
+    border-color: $base-white !important;
+  }
+}
+.v-toolbar__content,
+.v-toolbar__extension {
+  border-top: 5px solid $base-color;
+}
+.v-toolbar__title {
+  overflow: unset;
+  text-overflow: unset;
+  white-space: unset;
+}
+.v-banner__text {
+  color: white;
+  font: $base-font-family;
+  font-size: 16px;
+}
+.v-input__append-inner {
+  cursor: pointer !important;
+}
+.v-slide-group__wrapper,
+.v-slide-group__content,
+.v-chip,
+.v-chip__content,
+.v-chip__filter {
+  font-size: 12px !important;
+}
+
+
+.active_mobile_app {
+  background-color: #605e5b;
+}
+.MobileAppButtons {
+  display: flex;
+  justify-content: flex-end;
+
+  .v-btn:not(.v-btn--round).v-size--default {
+    height: 25px;
+    min-width: 64px;
+    padding: 0 16px;
+  };
+  button {
+    background: $base-color !important;
+    color: white !important;
+    &:not(:first-of-type) {
+      margin-left: 1rem;
+    }
+    .fa-pencil-alt:before {
+      content: "\f303";
+      font-size: 12px;
+      padding-right: 10px;
+    }
+  }
+  .MobileAppDeleteButton {
+    background: $base-red !important;
+    color: white !important;
+    margin-right: 4px;
+    .fa-trash-alt:before {
+      content: "\f2ed";
+      font-size: 12px;
+      padding-right: 10px;
+    }
+  }
+}
+
+button.v-pagination__navigation.v-pagination__navigation--disabled {
+  box-shadow: none !important;
+}
+
+.v-pagination__item{
+  color: $base-black !important;
+  background-color: $base-white !important;
+}
+.v-pagination__item--active.primary{
+  color: $base-white !important;
+  background-color: $base-color !important;
+}
+
+button.v-pagination__item.v-pagination__item--active.primary {
+  color: $base-white !important;
+  background-color: $base-color !important;
+}
+
+div.v-banner__wrapper {
+  padding-left: 12px !important;
+}
+
+[role=combobox] {
+  box-shadow: none !important;
+  border-bottom: 1px solid rgb(118, 118, 118);
+  border-radius: 0 !important;
+  padding-left: 0 !important;
+}
