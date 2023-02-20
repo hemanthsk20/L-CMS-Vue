@@ -152,7 +152,7 @@ export default {
           `https://mobile-app-cms.azure-api.net/private/appTexts/${appid}/${id}`,
           {
             headers: {
-              "Ocp-Apim-Subscription-Key": "8ec096a694fa4080ba8df25a2e132205",
+              "Ocp-Apim-Subscription-Key": "", //8ec096a694fa4080ba8df25a2e132205
             },
           }
         )
